@@ -1,0 +1,34 @@
+// Variables
+$color-primario: #3a86ff;
+$color-texto: #333;
+$espaciado: 16px;
+
+// Mixin
+@mixin boton($color-fondo) {
+  background-color: $color-fondo;
+  color: white;
+  padding: $espaciado / 2 $espaciado;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+// Anidamiento
+.tarjeta {
+  color: $color-texto;
+  padding: $espaciado;
+  border: 1px solid #ddd;
+
+  h2 {
+    color: $color-primario;
+    margin-bottom: 8px;
+  }
+
+  .boton-principal {
+    @include boton($color-primario);
+  }
+}

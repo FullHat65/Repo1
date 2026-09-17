@@ -1,0 +1,22 @@
+.tarjeta {
+  color: #333;
+  padding: 16px;
+  border: 1px solid #ddd;
+}
+.tarjeta h2 {
+  color: #3a86ff;
+  margin-bottom: 8px;
+}
+.tarjeta .boton-principal {
+  background-color: #3a86ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.tarjeta .boton-principal:hover {
+  opacity: 0.85;
+}
+
+/*# sourceMappingURL=styles.css.map */
